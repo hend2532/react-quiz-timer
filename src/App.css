@@ -1,0 +1,84 @@
+body{
+    background: #111;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.start,.questions,.finish{
+    background: #222;
+    padding: 50px;
+    border-radius: 10px;
+}
+.questions {
+    width: 400px;
+}
+@media (max-width:40px) {
+    .questions{
+        width: 90%;
+        padding: 10px;
+    }
+    #root > div{
+        width: 90%;
+
+    }
+}
+button{
+    background: #333;
+    color: #eee;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+button:hover{
+    background-color: #444;
+}
+progress{
+    width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(85, 178, 178);
+}
+.progress{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.answer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.answer button{
+    border-radius: 10px;
+}
+.answer .correct{
+    background: rgb(85, 101, 178);
+}
+.answer .error{
+    background: rgb(78, 58, 59);
+}
+.answer .checked{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding:0 10px;
+}
+.time{
+    background: #333;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.finish p{
+    text-align: center;
+}
